@@ -1,0 +1,144 @@
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .my_dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .my_dropdown:hover .my_dropbtn {
+  background-color: rgb(111, 168, 233);
+}
+
+li.my_dropdown {
+  display: inline-block;
+}
+
+.my_dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.my_dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.my_dropdown-content a:hover {background-color: #f1f1f1}
+
+.my_dropdown:hover .my_dropdown-content {
+  display: block;
+}
+
+
+.bg {
+  /* The image used */
+  background-image: url("light-green.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+
+  background-image: url("light-green.jpg");
+  float: left;
+  padding: 10px;
+  height: 100%; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 10%;
+}
+
+.right {
+  width: 90%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* 2 column layout with fixed statck content on the left */
+
+
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  
+  } 
+
+  
+  #framecontent{
+  position: absolute;
+  top: 10;
+  bottom: 10; 
+  left: 0;
+  width: 200px; /*Width of frame div*/
+  height: 100%;
+  overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+  background: navy;
+  color: white;
+  }
+  
+  #maincontent{
+  position: relative;
+  top: 10; 
+  left: 200px; /*Set left value to WidthOfFrameDiv*/
+  right: 0;
+  bottom: 10;
+  overflow: auto;
+  background: #fff;
+  }
+  
+  .innertube{
+  margin: 15px; /*Margins for inner DIV inside each DIV (to provide padding)*/
+  }
+  
+  input, button{
+    margin:0;
+}
+
+.ignore-css
+{
+    all:unset;
+}
+
+
